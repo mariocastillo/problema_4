@@ -1,5 +1,7 @@
 package clases;
 
+import java.util.ArrayList;
+
 import interfaces.IComparisonStrategy;
 
 
@@ -16,29 +18,6 @@ public  class Sorter {
 	}
 	
 
-<<<<<<< HEAD
-	public Student Sort(Student a,Student b){
-		if (strategy.comparisonf(a, b)<0) {
-			return a;
-		}
-		else if (strategy.comparisonf(a, b)>0) {
-			return b;
-		}
-		else {
-			return a;
-		}
-=======
-//	public Student Sort(Student a,Student b){
-//		if (strategy.comparisonf(a, b)<0) {
-//			return a;
-//		}
-//		else if (strategy.comparisonf(a, b)>0) {
-//			return b;
-//		}
-//		else {
-//			return a;
-//			}
-//  	}
 	
 	public ArrayList<Student> Sort(ArrayList<Student> a){
 		
@@ -51,17 +30,8 @@ public  class Sorter {
 			}			
 		}
 		return a;
-		
-		
-//		if (strategy.comparisonf(a, b)<0) {
-//			return a;
-//		}
-//		else {
-//			return b;
-//		}
->>>>>>> parent of bfad4ff... limpiar
-		
 	}
+
 
 
 }
