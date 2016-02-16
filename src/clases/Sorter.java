@@ -14,13 +14,12 @@ public  class Sorter {
 	}
 	
 	public void setStrategy(IComparisonStrategy strategy){
-		this.setStrategy(strategy);
+		this.strategy=strategy;
 	}
 	
-<<<<<<< HEAD
+	
 	
 	public ArrayList<Student> Sort(ArrayList<Student> a){
-		
 		for (int i = 0; i < a.size(); i++) {
 			for (int j = i+1; j < a.size(); j++) {
 				if (strategy.comparisonf(a.get(i), a.get(j))>0) {
@@ -30,23 +29,15 @@ public  class Sorter {
 			}			
 		}
 		return a;
-		
-		
-=======
+	}
+	
+	void printListe(ArrayList<Student> s){
+		for (Student student : s) {
+			System.out.println(student.name + "--" + student.career + "--" + student.age);
 
-	
-	public ArrayList<Student> Sort(ArrayList<Student> a){
->>>>>>> refs/remotes/origin/ordenar1.1
-		
-		for (int i = 0; i < a.size(); i++) {
-			for (int j = i+1; j < a.size(); j++) {
-				if (strategy.comparisonf(a.get(i), a.get(j))>0) {
-					a.add(i,a.get(j));
-					a.remove(j+1);
-				}
-			}			
 		}
-		return a;
+		
+		
 	}
 
 

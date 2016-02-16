@@ -3,11 +3,11 @@ package clases;
 
 public class Student {
     public String name;
-    public String carrer;
+    public String career;
     public int age;
 
-    public Student(String name, String carrer, int age) {
-         this.carrer = carrer;
+    public Student(String name, String career, int age) {
+         this.career = career;
          this.name = name;
          this.age = age;
     }
@@ -18,11 +18,11 @@ public class Student {
     public void setName(String name) {
 	this.name = name;
     }
-    public String getCarrer() {
-	return carrer;
+    public String getCareer() {
+	return career;
     }
-    public void setCarrer(String carrer) {
-	this.carrer = carrer;
+    public void setCareer(String career) {
+	this.career = career;
     }
     public int getAge() {
 	return age;
@@ -33,7 +33,7 @@ public class Student {
     
     void print() 
     { 
-        System.out.println(name + " - " +carrer + " - " + age ); 
+        System.out.println(name + " - " +career + " - " + age ); 
     }
 
     

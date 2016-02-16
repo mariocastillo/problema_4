@@ -16,22 +16,17 @@ public class StrategyFinal {
 		sList.add(mario);
 		sList.add(oscar);
 		sList.add(alejo);
-<<<<<<< HEAD
-		//mario.print();
-		//oscar.print();
-		n=a.Sort(sList);
-		for (Student student : n) {
-			System.out.println(student.carrer);
-=======
 
 		n=a.Sort(sList);
-		
-		for (Student student : n) {
-			System.out.println(student.carrer);
-			
->>>>>>> refs/remotes/origin/ordenar1.1
-		}
-		
+		a.printListe(n);
+		a.printListe(sList);
+//		a.setStrategy(new OrderbyCareer());
+//		n=a.Sort(sList);
+//		a.printListe(n);
+//		a.setStrategy(new OrderbyName());
+//		n=a.Sort(sList);
+//		a.printListe(n);
+				
 
 	}
 
