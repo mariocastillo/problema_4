@@ -16,11 +16,20 @@ public class StrategyFinal {
 		sList.add(mario);
 		sList.add(oscar);
 		sList.add(alejo);
+<<<<<<< HEAD
 		//mario.print();
 		//oscar.print();
 		n=a.Sort(sList);
 		for (Student student : n) {
 			System.out.println(student.carrer);
+=======
+
+		n=a.Sort(sList);
+		
+		for (Student student : n) {
+			System.out.println(student.carrer);
+			
+>>>>>>> refs/remotes/origin/ordenar1.1
 		}
 		
 
