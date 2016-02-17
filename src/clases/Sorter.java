@@ -19,10 +19,22 @@ public  class Sorter {
 	
 	
 	
-	public ArrayList<Student> Sort(ArrayList<Student> a){
+	public ArrayList<Student> Sortdown(ArrayList<Student> a){
 		for (int i = 0; i < a.size(); i++) {
 			for (int j = i+1; j < a.size(); j++) {
 				if (strategy.comparisonf(a.get(i), a.get(j))>0) {
+					a.add(i,a.get(j));
+					a.remove(j+1);
+				}
+			}			
+		}
+		return a;
+	}
+	
+	public ArrayList<Student> Sortup(ArrayList<Student> a){
+		for (int i = 0; i < a.size(); i++) {
+			for (int j = i+1; j < a.size(); j++) {
+				if (strategy.comparisonf(a.get(i), a.get(j))<0) {
 					a.add(i,a.get(j));
 					a.remove(j+1);
 				}
