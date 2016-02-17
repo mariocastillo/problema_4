@@ -7,7 +7,6 @@ public class StrategyFinal {
 	
 	public static void main(String[] args) {
 		Sorter a=new Sorter(new OrderbyAge());
-		ArrayList<Student> n;
 		
 		ArrayList<Student> sList = new ArrayList<Student>();
 		Student mario= new Student("Mario Ernesto","Cngenieria Electronica", 24);
@@ -17,9 +16,10 @@ public class StrategyFinal {
 		sList.add(oscar);
 		sList.add(alejo);
 
-		n=a.Sort(sList);
-		a.printListe(n);
-		a.printListe(sList);
+		
+		a.printListe(a.Sortdown(sList));
+		a.printListe(a.Sortup(sList));
+		
 //		a.setStrategy(new OrderbyCareer());
 //		n=a.Sort(sList);
 //		a.printListe(n);
